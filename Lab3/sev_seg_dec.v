@@ -7,7 +7,7 @@ module sev_seg_dec(out, inbus);
 		case(inbus)
 
 		4'h0: out = 7'b0000001;
-		4'h1: out = 7'b1011111;
+		4'h1: out = 7'b1001111;
 		4'h2: out = 7'b0010010;
 		4'h3: out = 7'b0000110;
 		4'h3: out = 7'b0000001;
