@@ -8,7 +8,7 @@ s_F = 4'd5, s_G = 4'd6, s_H = 4'd7, s_I = 4'd8;
 
 always@(posedge clk, posedge reset) begin
 if (reset)
-	state = s_A;
+	state <= s_A;
 else
 case (state)
 s_A: state <= (w) ? s_F : s_B;
