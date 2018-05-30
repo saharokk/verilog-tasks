@@ -8,7 +8,7 @@ s_Y5 = 4'd5, s_Y6 = 4'd6, s_Y7 = 4'd7, s_Y8 = 4'd8, s_Yk = 4'd9;
 
 always@(posedge clk, posedge reset) begin
 if (reset)
-	state = s_Y0;
+	state <= s_Y0;
 else
 	case (state)
 	s_Y0: state <= s_Y1;
